@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Inici"
+    android:background="#577377">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="554dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="120dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/iniciar"
+        style="@style/MyButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:text="INICIAR SESIÓN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registro"
+        style="@style/MyButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:text="REGISTRO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iniciar" />
+
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro"
+        app:srcCompat="@drawable/instalogo" />
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/insta"
+        app:layout_constraintTop_toBottomOf="@+id/registro"
+        app:srcCompat="@drawable/faceicon" />
+
+    <ImageView
+        android:id="@+id/gmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/face"
+        app:layout_constraintTop_toBottomOf="@+id/registro"
+        app:srcCompat="@drawable/gmailicon" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/gmail"
+        app:layout_constraintTop_toBottomOf="@+id/registro"
+        app:srcCompat="@drawable/twitterlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
