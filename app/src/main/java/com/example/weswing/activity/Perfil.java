@@ -1,48 +1,40 @@
-package com.example.weswing;
+package com.example.weswing.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-public class Moguda extends AppCompatActivity {
-    CardView escola;
+import com.example.weswing.R;
+
+public class Perfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_moguda);
+        setContentView(R.layout.activity_perfil);
         getSupportActionBar().hide();
 
         ImageButton back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Moguda.this, Newsfeed.class);
+                Intent i = new Intent(Perfil.this, Newsfeed.class);
                 startActivity(i);
             }
         });
 
-        Button assistentsButton = findViewById(R.id.assistentsButton);
-        assistentsButton.setOnClickListener(new View.OnClickListener() {
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView mogudesTextView = findViewById(R.id.text_view_mogudes);
+        mogudesTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Moguda.this, Assistents.class);
-                startActivity(i);
-            }
-        });
-
-        escola =findViewById(R.id.mogudaOrganitzador);
-        escola.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Moguda.this, Escola.class);
-                startActivity(i);
+                Intent intent = new Intent(Perfil.this, Moguda.class);
+                startActivity(intent);
             }
         });
 
@@ -50,7 +42,7 @@ public class Moguda extends AppCompatActivity {
         calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent (Moguda.this,Calendar.class);
+                Intent a = new Intent (Perfil.this, Calendar.class);
                 startActivity(a);
             }
         });

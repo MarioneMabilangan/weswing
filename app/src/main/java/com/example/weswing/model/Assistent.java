@@ -1,4 +1,4 @@
-package com.example.weswing;
+package com.example.weswing.model;
 
 public class Assistent {
     private int imagen;

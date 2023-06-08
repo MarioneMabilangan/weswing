@@ -1,4 +1,4 @@
-package com.example.weswing;
+package com.example.weswing.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import com.example.weswing.model.Assistent;
+import com.example.weswing.adapters.AssistentAdapter;
+import com.example.weswing.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +54,7 @@ public class Professors extends AppCompatActivity {
         calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent (Professors.this,Calendar.class);
+                Intent a = new Intent (Professors.this, Calendar.class);
                 startActivity(a);
             }
         });

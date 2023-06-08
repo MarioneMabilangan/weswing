@@ -1,4 +1,4 @@
-package com.example.weswing;
+package com.example.weswing.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.weswing.model.Calendari;
+import com.example.weswing.adapters.CalendariAdapter;
+import com.example.weswing.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -13,42 +13,42 @@
         android:theme="@style/Theme.WeSwing"
         tools:targetApi="31">
         <activity
-            android:name=".Filtres"
+            android:name=".activity.Filtres"
             android:exported="false" />
         <activity
-            android:name=".Calendar"
+            android:name=".activity.Calendar"
             android:exported="false" />
         <activity
-            android:name=".Professors"
+            android:name=".activity.Professors"
             android:exported="false" />
         <activity
-            android:name=".Escola"
+            android:name=".activity.Escola"
             android:exported="false" />
         <activity
-            android:name=".Perfil"
+            android:name=".activity.Perfil"
             android:exported="false" />
         <activity
-            android:name=".Assistents"
+            android:name=".activity.Assistents"
             android:exported="false" />
         <activity
-            android:name=".Moguda"
+            android:name=".activity.Moguda"
             android:exported="false" />
         <activity
-            android:name=".Newsfeed"
+            android:name=".activity.Newsfeed"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Registre"
+            android:name=".activity.Registre"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Inici"
+            android:name=".activity.Inici"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

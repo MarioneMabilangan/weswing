@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Filtres">
+    tools:context=".activity.Filtres">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -39,14 +39,15 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/AplicarFiltres"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginBottom="364dp"
-        android:backgroundTint="@color/swing"
         android:gravity="center"
+        android:textColor="@color/white"
+        style="@style/MyButtonStyle"
         android:text="Aplicar Filtres"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
