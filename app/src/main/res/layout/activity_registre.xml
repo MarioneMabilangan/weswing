@@ -43,15 +43,186 @@
         </androidx.appcompat.widget.Toolbar>
 
 
-    <EditText
-        android:id="@+id/Nom"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:hint="Name" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E9E2E2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:text="Adrian"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <Spinner
+                android:id="@+id/spinner_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:entries="@array/sexo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:text="adriancan21@gmail.com"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:background="@color/green"
+                android:text="Disponible"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="······"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <Spinner
+                android:id="@+id/spinner_pais"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:entries="@array/pais" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:textSize="16dp"
+                android:text="Villanueva de la Cañada"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:entries="@array/ciutats" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:checked="true"
+                android:text="Dancer" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:checked="false"
+                android:text="Teacher" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="20sp"
+                android:checked="false"
+                android:text="Music" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <ToggleButton
+                android:id="@+id/toggle_upload_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="@color/white"
+                android:backgroundTint="#a14844"
+                android:textOff="Upload Picture"
+                android:textOn="Upload Picture" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCB1B1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botonregistrate"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/white"
+                android:text="Register"
+                style="@style/MyButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

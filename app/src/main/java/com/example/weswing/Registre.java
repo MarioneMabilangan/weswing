@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
@@ -22,10 +23,19 @@ public class Registre extends AppCompatActivity {
         getSupportActionBar().hide();
 
         ImageButton back = findViewById(R.id.back);
+        Button register = findViewById(R.id.botonregistrate);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Registre.this, Inici.class);
+                startActivity(i);
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Registre.this, Newsfeed.class);
                 startActivity(i);
             }
         });

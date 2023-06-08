@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/back"
+            android:id="@+id/perfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/profile"
@@ -40,13 +40,260 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <ScrollView
+        android:id="@+id/scrollviewnews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        tools:ignore="MissingConstraints"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20sp">
+
+            <ImageView
+                android:id="@+id/profilefoto1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/vedrunalogo" />
+
+            <TextView
+                android:id="@+id/txtview1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilefoto1"
+                android:textSize="19sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hinttext1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview1"
+                android:hint="Fa 6 hores"
+                android:layout_marginLeft="70dp"
+                />
+            <ImageView
+                android:id="@+id/flecha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+            <View
+                android:id="@+id/linea1"
+                android:layout_below="@id/hinttext1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_below="@id/linea1"
+                android:id="@+id/profilefoto2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/vedrunalogo" />
+
+            <TextView
+                android:layout_below="@id/linea1"
+                android:id="@+id/txtview2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilefoto2"
+                android:textSize="19sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/flecha2"
+                android:layout_below="@id/linea1"
+                android:layout_toRightOf="@id/txtview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"/>
+            <TextView
+                android:id="@+id/hinttext2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview2"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="70dp"
+                />
+            <View
+                android:id="@+id/linea2"
+                android:layout_below="@id/hinttext2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_below="@id/linea2"
+                android:id="@+id/profilefoto3"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/vedrunalogo" />
+
+            <TextView
+                android:layout_below="@id/linea2"
+                android:id="@+id/txtview3"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilefoto2"
+                android:textSize="19sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/flecha3"
+                android:layout_below="@id/linea2"
+                android:layout_toRightOf="@id/txtview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"/>
+            <TextView
+                android:id="@+id/hinttext3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview3"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="70dp"
+                />
+            <View
+                android:id="@+id/linea3"
+                android:layout_below="@id/hinttext3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_below="@id/linea3"
+                android:id="@+id/profilefoto4"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/vedrunalogo" />
+
+            <TextView
+                android:layout_below="@id/linea3"
+                android:id="@+id/txtview4"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilefoto2"
+                android:textSize="19sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_below="@id/linea3"
+                android:layout_toRightOf="@id/txtview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"/>
+            <TextView
+                android:id="@+id/hinttext4"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview4"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="70dp"
+                />
+            <View
+                android:id="@+id/linea4"
+                android:layout_below="@id/hinttext4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:layout_below="@id/linea4"
+                android:id="@+id/profilefoto5"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/vedrunalogo" />
+
+            <TextView
+                android:layout_below="@id/linea4"
+                android:id="@+id/txtview5"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilefoto5"
+                android:textSize="19sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/flecha4"
+                android:layout_below="@id/linea3"
+                android:layout_toRightOf="@id/txtview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"/>
+            <TextView
+                android:id="@+id/hinttext5"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtview5"
+                android:hint="Fa 10 hores"
+                android:layout_marginLeft="70dp"
+                />
+            <View
+                android:id="@+id/linea5"
+                android:layout_below="@id/hinttext4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="15dp"/>
+            <ImageView
+                android:id="@+id/flecha5"
+                android:layout_below="@id/linea5"
+                android:layout_toRightOf="@id/txtview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        >
+        android:layout_marginTop="672dp"
+        android:background="#e7e2d7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
             android:id="@+id/back2"
@@ -63,11 +310,12 @@
             android:id="@+id/back3"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="80dp"
             android:src="@drawable/news_default"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
         <ImageView
             android:id="@+id/back4"
             android:layout_width="50dp"
@@ -77,11 +325,12 @@
             app:layout_constraintBottom_toBottomOf="@+id/toolbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
         <ImageView
             android:id="@+id/back5"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="230dp"
+            android:layout_marginLeft="220dp"
             android:src="@drawable/calendar"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar"
             app:layout_constraintEnd_toEndOf="parent"
@@ -91,13 +340,23 @@
             android:id="@+id/back6"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="310dp"
+            android:layout_marginLeft="290dp"
             android:src="@drawable/ic_baseline_search_24"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>>
+        <ImageView
+            android:id="@+id/back7"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="360dp"
+            android:src="@drawable/chat"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
